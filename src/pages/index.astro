@@ -13,6 +13,7 @@ import ModelComplectations from '@/components/Model/Complectations.astro';
 import Callback from '@/components/Callback.astro';
 import Services from '@/components/Services.astro';
 import Contacts from '@/components/Contacts.astro';
+import AutoShowModal from '@/components/AutoShowModal.astro';
 import Morquee from '@/components/Marquee/Index.astro';
 
 import modelsData from '@/data/models.json'
@@ -41,4 +42,16 @@ import SeoText from '@/components/Seo/Index.astro';
 	<Services />
 	<SeoText mdx="index" />
 	<Contacts />
+
+	<AutoShowModal
+		modalShow = 10000
+		title="JAC В НАЛИЧИИ.<br> Особые условия на покупку автомобилей JAC по цене от {{priceb-jac-js3}}."
+		subtitle="Оставьте заявку для записи на тест-драйв и получите возможность приобрести JAC выгодно."
+		testDrive={true}
+		modalPosition="right-bottom"
+		img ="https://cdn.alexsab.ru/b/jac/img/j7-1004w.webp"
+		imgPosition="left"
+		formName="Особые условия на покупку автомобилей. Запись на тест-драйв"
+	/>
+
 </Layout>
